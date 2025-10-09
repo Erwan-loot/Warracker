@@ -53,7 +53,7 @@ services:
       "
     
   warrackerdb:
-    image: "postgres:15-alpine"
+    image: "postgres:17-alpine@sha256:dac32bfa7ef9626a4f8b909c3b79578c6f2c09846626d41b14ee669baa7bbb67"
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./backend/init.sql:/docker-entrypoint-initdb.d/init.sql
