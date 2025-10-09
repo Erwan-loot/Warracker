@@ -27,7 +27,7 @@ ARG LIBPQ5_VERSION=17.6-0+deb13u1
 # renovate: datasource=deb depName=libssl3t64
 ARG LIBSSL3T64_VERSION=3.5.1-1
 
-FROM python:3.13-slim-trixie AS builder
+FROM python:3.14-slim-trixie@sha256:1e7c3510ceb3d6ebb499c86e1c418b95cb4e5e2f682f8e195069f470135f8d51 AS builder
 
 # Install build tools (only in builder stage)
 RUN apt-get update && \
@@ -48,7 +48,7 @@ COPY backend/requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
 
 
-FROM python:3.13-slim-trixie AS runtime
+FROM python:3.14-slim-trixie@sha256:1e7c3510ceb3d6ebb499c86e1c418b95cb4e5e2f682f8e195069f470135f8d51 AS runtime
 
 # Metadata for final image
 LABEL org.opencontainers.image.source="https://github.com/sassanix/Warracker"
