@@ -38,7 +38,7 @@ services:
     restart: unless-stopped
   
   warrackerdb:
-    image: postgres:15-alpine
+    image: postgres:16-alpine@sha256:9d4951e6dc70422022512ff05ac86e0ae360da051c563accbed85d6f654c3357
     volumes:
       - postgres_data:/var/lib/postgresql/data
     environment:
