@@ -11,13 +11,13 @@ ARG LIBSSL_DEV_VERSION=3.5.1-1
 # renovate: datasource=deb depName=pkg-config
 ARG PKG_CONFIG_VERSION=1.8.1-4
 # renovate: datasource=deb depName=nginx
-ARG NGINX_VERSION=1.24.0-1
+ARG NGINX_VERSION=1.26.3-3+deb13u1
 # renovate: datasource=deb depName=supervisor
-ARG SUPERVISOR_VERSION=4.2.5-1
+ARG SUPERVISOR_VERSION=4.2.5-3
 # renovate: datasource=deb depName=postgresql-client
 ARG POSTGRESQL_CLIENT_VERSION=15.10-0+deb13u1
 # renovate: datasource=deb depName=gettext-base
-ARG GETTEXT_BASE_VERSION=0.21-1
+ARG GETTEXT_BASE_VERSION=0.23.1-2
 # renovate: datasource=deb depName=curl
 ARG CURL_VERSION=8.14.1-2
 # renovate: datasource=deb depName=ca-certificates
