@@ -24,8 +24,8 @@ ARG CURL_VERSION=8.14.1-2
 ARG CA_CERTIFICATES_VERSION=20241027
 # renovate: datasource=deb depName=libpq5
 ARG LIBPQ5_VERSION=17.6-0+deb13u1
-# renovate: datasource=deb depName=libssl3
-ARG LIBSSL3_VERSION=3.5.1-1
+# renovate: datasource=deb depName=libssl3t64
+ARG LIBSSL3T64_VERSION=3.5.1-1
 
 FROM python:3.13-slim-trixie AS builder
 
@@ -65,7 +65,7 @@ RUN apt-get update && \
         ca-certificates=${CA_CERTIFICATES_VERSION} \
         libpq5=${LIBPQ5_VERSION} \
         libcurl4=${LIBCURL4_OPENSSL_DEV_VERSION} \
-        libssl3=${LIBSSL3_VERSION} && \
+        libssl3t64=${LIBSSL3_VERSION} && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 

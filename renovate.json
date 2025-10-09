@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "matchDatasources": ["deb"],
-      "registryUrlTemplate": "https://deb.debian.org/debian?suite=trixie&components=main,contrib,non-free&binaryArch=amd64",
+      "registryUrl": "https://deb.debian.org/debian?suite=trixie&components=main,contrib,non-free&binaryArch=amd64",
       "groupName": "Debian packages"
     },
     {
