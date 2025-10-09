@@ -21,7 +21,7 @@ ARG GETTEXT_BASE_VERSION=0.23.1-2
 # renovate: datasource=deb depName=curl
 ARG CURL_VERSION=8.14.1-2
 # renovate: datasource=deb depName=ca-certificates
-ARG CA_CERTIFICATES_VERSION=20241027
+ARG CA_CERTIFICATES_VERSION=20250419
 # renovate: datasource=deb depName=libpq5
 ARG LIBPQ5_VERSION=17.6-0+deb13u1
 # renovate: datasource=deb depName=libssl3t64
