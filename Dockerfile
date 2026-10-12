@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1.19.0@sha256:b6afd42430b15f2d2a4c5a02b919e98a525b785b1aaff16747d2f623364e39b6
+# syntax=docker/dockerfile:1.28.0@sha256:bb22d9815c728170f72750f4e5b0d672e06176142e1d602c7e66c050100b7e5b
 
 # renovate: datasource=deb depName=build-essential
 ARG BUILD_ESSENTIAL_VERSION=12.12
